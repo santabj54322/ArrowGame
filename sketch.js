@@ -385,7 +385,7 @@ function computerTurn() {
 
         if (SolutionFound && goal_seek_velocity !== null) {
             let computer_position = players[current_turn].position.copy();
-            Arrow1 = new Arrow(computer_position, goal_seek_velocity.mult(random(0.97, 1.03)), goal_seek_velocity.heading());
+            Arrow1 = new Arrow(computer_position, goal_seek_velocity.mult(random(0.985, 1.015)), goal_seek_velocity.heading());
             SolutionFound = false;
             goal_seek_velocity = null;
             current_turn = 1 - current_turn;
